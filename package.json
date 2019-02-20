@@ -11,6 +11,7 @@
     ]
   },
   "dependencies": {
+    "@ibm/plex": "^1.2.3",
     "get-pixels": "^3.3.0",
     "mocha-multi": "^1.0.1",
     "react": "^16.4.1",
