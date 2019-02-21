@@ -15,7 +15,12 @@ export default class Matrix extends Component {
     this.setState({ color: hex }, () => console.log(this.state));
   };
 
-  genRow = vals => vals.map((val, idx) => <Cell key={idx} color={val} />);
+  stateColor = () => this.state.color;
+
+  genRow = vals =>
+    vals.map((val, idx) => (
+      <Cell key={idx} color={val} stateColor={this.stateColor} />
+    ));
 
   genMatrix = () =>
     this.props.values.map((rowVals, idx) => (

@@ -10,11 +10,12 @@ export default class Cell extends Component {
 
   handleClick = e => {
     this.setState({
-      color: this.colorSelect
+      color: this.props.stateColor()
     });
   };
 
   render() {
+    // console.log(this.props.stateColor);
     return (
       <div
         className='cell'
